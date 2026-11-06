@@ -1,0 +1,7 @@
+n = int(input("")) 
+scores = list(map(int, input("").split()))
+n = len(scores)
+a = sum(scores)
+b = a - max(scores) - min(scores)
+c = b / (n - 2)
+print(f"{c:.2f}")
